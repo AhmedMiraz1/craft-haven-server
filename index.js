@@ -10,8 +10,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// artCraft
-// 3F7URSwk7wgUEXFI
+
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.6w72r5l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 console.log(uri);
@@ -30,17 +29,12 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
-    // const craftCollection = client.db("craftDB").collection("carft")
+   
 
     const artCraftCollection = client.db("artCraftDB").collection("artCraft");
 
 
-    // app.get("craft", async(req, res)=> {
-    //   const cursor = craftCollection.find();
-    //   const result = await cursor.toArray();
-    //   res.send(result);
-    //   console.log(result);
-    // })
+   
 
     // artCraft collection //
 
